@@ -1,14 +1,11 @@
-/* Login.css */
+/* SignUp.css */
 .login-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-  }
-  
-  .signin-logo {
-    margin-bottom: 20px;
+    height: 100vh;
+    background-color: #f9f9f9; /* Set your desired background color */
   }
   
   .signin-logo img {
@@ -26,33 +23,28 @@
   }
   
   .form-group {
-    position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   
-  input {
+  .boxed-input {
     width: calc(100% - 20px);
     padding: 10px;
     font-size: 16px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .boxed-input:focus {
+    border-color: #007bff;
   }
   
   label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 16px;
+    display: block;
+    font-size: 14px;
     color: #666;
-    transition: 0.3s;
-  }
-  
-  input:focus + label,
-  input:valid + label {
-    top: -10px;
-    font-size: 12px;
-    color: #007bff;
+    text-align: left;
   }
   
   button {
